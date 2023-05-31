@@ -1,0 +1,726 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  display: flex;
+}
+.sidenav{
+    background-color: grey;
+    height: 100vh;
+}
+
+.sidenav nav{
+  padding: 38px;
+}
+
+.sidenav nav li{
+  list-style: none;
+  font-size: 30px;
+  padding: 33px 0;
+}
+.sidenav nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+.main{
+  /* background-color: rgb(238, 24, 106); */
+  width: 85vw;
+}
+.infoContainer{
+  height: 60vh;
+  width: 75vw;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(255, 254, 254);
+  flex-wrap: wrap;
+}
+
+.devPic img{
+  height: 60vh;
+  margin-right: -50px;
+  border-radius: 20px;
+  border: none;
+}
+.devInfo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hello{
+  font-size: 25px;
+  color: rgb(5, 5, 5);
+}
+.name{
+  color: black ;
+  font-size: 34px;
+  font-weight: bold;
+}
+.about{
+  color: rgb(10, 10, 10);
+  font-size: 45px;
+
+}
+.moreabout{
+  font-size: 20px;
+}
+.buttons{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+button{
+  padding: 15px;
+  border-radius: 20px;
+  margin: 0 2px;
+  outline: none;
+  border: 1px solid lightblue;
+  background: transparent;
+  color: lightblue;
+  transition: 0.4s;
+  position: relative;
+  cursor: pointer;
+
+}
+button:hover{
+  background: lightblue;
+  transition: 0.4s;
+  color: white;
+}
+
+.contactForm{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 200px;
+  padding-left:  34px;
+  
+}
+.contactForm h2{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.contactForm form div{
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.contactForm form div input{
+  width: 26vw;
+  border-radius: 5px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+.form-check-input{
+  position: absolute;
+  top: 0%;
+}
+.form-check-label{
+  margin-top: 20px;
+}
+
+#isclient{
+  top: 0;
+  left: -240px;
+  position: absolute;
+}
+
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 220px;
+  padding: 40px;
+  padding-left: 80px;
+}
+
+.gbRepo{
+  text-decoration:  none;
+  color: black;
+  margin: auto;
+  text-align: center;
+  border: 1px solid lightblue;
+  border-radius: 11px;
+  margin-top: 20px;
+  padding: 8px 15px;
+}
+
+.blog-item p{
+  margin-bottom: 20px;
+}
+
+.gbRepo:hover{
+  background: lightblue;
+  transition: 0.4s;
+}
+
+.blog-item h3{
+  font-size: 20px;
+  width: 75%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.myContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  padding: 60px;
+}
+.myContainer h2{
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 22px;
+}
+.myContainer h1{
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.skillContainer{
+  margin-top: 40px;
+}
+.skillSet{
+  display: flex;
+  align-items: center;
+}
+.skillContainer p{
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 900;
+}
+ .skills{
+  margin-left: 5px;
+  width: 305px;
+  height: 10px;
+  background: red;
+}
+
+.s5{
+  width: 275px;
+  border: 2px solid black;
+}
+.s4{
+  background: yellow;
+    border: 2px solid black;
+    width: 250px;
+  }
+  .s6{
+    background: yellow;
+    border: 2px solid black;
+    width: 260px;
+  }
+  .sidenavGo{
+    transform: translate(-444px , 0px);
+  position: absolute;
+  transition: 0.6s;
+  }
+  .hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    transition: 0.6s;
+
+  }
+  .close{
+    margin-left: 185px;
+    background-color: transparent;
+    transition: 0.6s;
+  }
+
+
+.jobContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding-left: 60px;
+  margin-top: -60px;
+}
+.jobContainer h1{
+  font-size: 30px;
+  font-weight: 900;
+}
+.jobContainer .exp{
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.companySkills{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(231, 13, 13);
+}
+
+.company{
+  color: black;
+  margin-bottom: 10px;
+}
+
+.achievements span{
+  font-size: 20px ;
+  color: red;
+}
+.achievements{
+  font-size: 20px ;
+}
+
+@media(max-width:320px){
+  .devPic img{
+    height: 50vh;
+    margin-top: 20px;
+    width: 70vw;
+  }
+  .sidenav nav{
+    padding: 4px;
+    font-size: 5px;
+  
+  }
+  .sidenav{
+    background-color: grey;
+    height: 100vh;
+    width: 40vw;
+    font-size: 5px;
+}
+.hello{
+  font-size: 10px;
+  color: rgb(5, 5, 5);
+}
+.name{
+  color: black ;
+  font-size: 34px;
+  font-weight: bold;
+}
+.about{
+  color: rgb(10, 10, 10);
+  font-size: 14px;
+
+}
+.moreabout{
+  font-size: 10px;
+}
+.buttons{
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+}
+button{
+  padding: 2px;
+  font-size: 10px;
+  cursor: pointer;
+
+}
+}
+
+@media(max-width:768px){
+  .devPic img{
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 60vw;
+  }
+  .sidenav nav{
+    padding: 4px;
+    font-size: 5px;
+  
+  }
+  .sidenav{
+    background-color: grey;
+    height: 200vh;
+    width: 45vw;
+    font-size: small;
+}
+button{
+  padding: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.close{
+  margin-left: -3px;
+}
+.sidenav{
+  height: 30vh;
+
+}
+}
+@media(max-width:1024px){
+  .sidenav{
+    background-color: grey;
+    height: 200vh;
+    width: 40vw;
+    font-size: small;
+}
+.close{
+  margin-left: -2px;
+}
+.devPic img{
+  margin-top: 50px;
+  margin-left: -10px;
+}
+.infoContainer{
+  width: 100%;
+  margin-left: 5px;
+}
+.hello{
+  font-size: 10px;
+  color: rgb(5, 5, 5);
+}
+.name{
+  color: black ;
+  font-size: 34px;
+  font-weight: bold;
+  margin-left: 1px;
+}
+.about{
+  color: rgb(10, 10, 10);
+  font-size: 14px;
+  margin-left: 1px;
+
+}
+.moreabout{
+  font-size: 10px;
+  margin-left: 1px;
+}
+.buttons{
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+}
+button{
+  padding: 2px;
+  font-size: 10px;
+  cursor: pointer;
+
+}
+}
+
+@media(max-width:1200px){
+  .devPic img{
+    width: 400px;
+    margin-top: 40px;
+  }
+}
+
+@media(max-width:1168px){
+  .devPic img{
+    margin-top: 50px;
+  }
+  .hello{
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+  }
+  .name{
+    color: black ;
+    font-size: 44px;
+    font-weight: bold;
+ 
+  }
+  .about{
+    color: rgb(10, 10, 10);
+    font-size: 24px;
+    margin-left: 1px;
+  
+  }
+  .moreabout{
+    font-size: 17px;
+    margin-left: 1px;
+  }
+  .sidenav{
+    background-color: grey;
+    height: 200vh;
+    width: 40vw;
+    font-size: small;
+}
+.myContainer{
+  display: flex;
+}
+.myInfo{
+  font-size: 10px;
+  margin-top: 350px;
+  height: 100vh;
+}
+
+}
+
+@media (max-width:480px){
+  .sidenav{
+    background-color: grey;
+    height: 200vh;
+    width: 250px;
+    font-size: smaller;
+    
+}
+
+.sidenav nav{
+  padding: 4px;
+  font-size: 1px;
+}
+.myContainer{
+  display: flex;
+  width: 100%;
+}
+.myInfo{
+  font-size: 10px;
+  height: 100vh;
+  width: 100%;
+  font-size: 10px;
+}
+.sidenav{
+  height: 230vh;
+}
+}
+@media (max-width:320px){
+  .sidenav{
+    height: 500vh;
+  }
+  .myInfo{
+    font-size: 10px;
+    height: 100vh;
+    width: 100%;
+    font-size: 10px;
+    
+  }
+  
+}
+@media(max-width:560px){
+  .devPic img{
+    margin-left: -70px;
+    margin-top: 50px;
+    height: 50vh;
+    width: 250px;
+  }
+  .sidenav{
+    width: 37vw;
+    height: 25vh;
+  }
+  .infoContainer{
+    width: 100%;
+    padding-inline-start: 10px;
+  }
+
+}
+@media(max-width:672px){
+  .devPic img{
+    margin-left: -70px;
+    margin-top: 50px;
+    height: 50vh;
+    width: 250px;
+  }
+  .infoContainer{
+    width: 100%;
+    padding-inline-start: 10px;
+    font-size: 20px;
+  }
+}
+
+
+
+/* Media Query for my intro  */
+
+@media(max-width:1024px){
+  .sidenav{
+    height:  100vh;
+    padding-top: 120px;
+
+  }
+  .myInfo{
+    font-size: 10px;
+    height: 75vh;
+    width: 100%;
+    font-size: 10px;
+  }
+
+}
+@media(max-width:1168px){
+  .sidenav{
+    height:  102vh;
+    padding-top: 120px;
+
+  }
+  .myInfo{
+    height: 75vh;
+    width: 100%;
+    font-size: 10px;
+  }
+
+}
+@media(max-width:768px){
+  .sidenav{
+    height:  120vh;
+    padding-top: 56px;
+
+  }
+  .myInfo{
+    font-size: 10px;
+    height: 100vh;
+    width: 100%;
+  }
+
+}
+@media(max-width:480px){
+  .sidenav{
+    height: 20vh;
+    padding-top: 100px;
+  }
+  .myInfo{
+    font-size: 10px;
+    height: 100vh;
+    max-width: 200px;
+    margin-left: -50px;
+  }
+  .myInfo h1{
+    font-size: 15px;
+  }
+  .myInfo h2{
+    font-size: 18px;
+  }
+  .sidenav li a{
+    font-size: 16px;
+  }
+
+}
+@media(max-width:360px){
+  .sidenav{
+    height:  240vh;
+    padding-top: 80px;
+
+
+  }
+  .myInfo{
+    font-size: 10px;
+    height: 85vh;
+    width: 100%;
+  }
+
+}
+@media(max-width:320px){
+  .sidenav{
+    height:  490vh;
+    padding-top: 80px;
+
+  }
+  .myInfo{
+    font-size: 10px;
+    height: 100vh;
+    width: 100%;
+  }
+
+}
+
+
+/* --------Media query for experiences------------- */
+@media(max-width:1168px){
+  .jobContainer{
+    height: 120vh;
+    width: 100%;
+    margin-left: auto;
+  }
+  .sidenav{
+    height: 130vh;
+    padding-top: 100px;
+  }
+
+}
+
+@media(max-width:1024px){
+ 
+  .jobContainer{
+    height: 140vh;
+    width: 100%;
+    margin-left: auto;
+  }
+  .sidenav{
+    height: 150vh;
+    padding-top: 100px;
+  }
+}
+
+
+@media(max-width:768px){
+  .jobContainer{
+    height: 130vh;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .sidenav{
+    height: 150vh;
+    padding-top: 100px;
+  }
+}
+@media(max-width:672px){
+  .jobContainer{
+    height: 180vh;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .sidenav{
+    height: 180vh;
+    padding-top: 100px;
+  }
+}
+@media (max-width:560px){
+  .jobContainer{
+    height: 190vh;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .sidenav{
+    height: 200vh;
+    padding-top: 100px;
+  }
+}
+@media(max-width:480px){
+  .jobContainer{
+    height: 250vh;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .sidenav{
+    height: 450vh;
+    padding-top: 100px;
+  }
+
+}
+
+@media(max-width:360px){
+  .jobContainer{
+    height: 520vh;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .sidenav{
+    height: 530vh;
+    padding-top: 100px;
+  }
+}
+
+@media(max-width:320px){
+  .jobContainer{
+    height: 990vh;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .sidenav{
+    height: 980vh;
+    padding-top: 100px;
+  }
+
+}
+
+
